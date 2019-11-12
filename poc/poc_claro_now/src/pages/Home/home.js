@@ -1,10 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Carrossel from '../../components/Carrossel/carrossel';
+import './home.css';
 
-const Home = () => {
+const Home = () => { 
   return (
     <main>
-      <p>Home funcionando</p>
+      <p>Agora</p>
+      <Carrossel></Carrossel>
     </main>
   );
 };

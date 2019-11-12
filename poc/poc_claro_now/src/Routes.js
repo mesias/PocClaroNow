@@ -6,6 +6,7 @@ const Home = lazy(() => import('./pages/Home/home'));
 const VideoShowCase = lazy(() => import('./pages/videoshowcase'));
 
 const Routes = () =>(
+  <>
   <BrowserRouter>
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
@@ -20,7 +21,8 @@ const Routes = () =>(
         {/* <Route exact path='/Cozinha' component={Cozinha}></Route>        */}
       </Switch>
     </Suspense>
-  </BrowserRouter>  
+  </BrowserRouter> 
+  </> 
 )
 
 export default Routes;
