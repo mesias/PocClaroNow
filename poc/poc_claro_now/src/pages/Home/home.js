@@ -21,7 +21,6 @@ const Home = () => {
             className="carrossel"
           ></Carrossel>
         </section>        
-            className="carrossel"/>
         </section>
         <section className="medalhas">
           <MedalsChart />
