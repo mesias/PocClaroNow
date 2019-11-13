@@ -17,6 +17,16 @@
     height:20%;
 }
 
+.bar1up{
+    position:absolute;
+    /* display: none; */
+    bottom: 5%;
+    right:5%;
+    width:20%;
+    height:20%;
+    z-index: 10;
+}
+
 .bar2{
     position:absolute;
     /* display: none; */
@@ -24,4 +34,14 @@
     right:30%;
     width:20%;
     height:20%;
+}
+
+.bar2up {
+    position:absolute;
+    /* display: none; */
+    bottom:5%;
+    right:30%;
+    width:20%;
+    height:20%;
+    z-index: 10;
 }
