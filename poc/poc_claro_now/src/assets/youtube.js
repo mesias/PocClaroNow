@@ -3,7 +3,7 @@ const YouTube = {
         PanFinalRevezamento4x200: "9xAxYxRv-xw",
         CampeonatoPiscinaCurta: "77cGEsthFwA",
         Rio2016Natacao: "DGzi1K8GVKw",
-    },
-};
+		}
+	}   
 
 export default YouTube;

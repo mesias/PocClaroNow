@@ -1,32 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./carrossel.css";
+import Youtube from '../../assets/youtube';
+import ReactDOM from "react-dom";
+import Menu from "../CardCarousel/CardCarousel";
 
-const Carrossel = () => {
-  const [arr, setArr] = useState([
-    {
-      link: "canal 01", 
-      title: "First slide label",
-      text: "Nulla vitae elit libero, a pharetra augue mollis interdum."
-    },
-    {
-      link: "canal 02",
-      title: "Second slide label",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      link: "canal 03",
-      title: "Third slide label",
-      text: "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
-      link: "canal 04",
-      title: "Esse eu fix por conta",
-      text: "Para ter certeza que estava funcionando :);"
-    }
-  ]);
-  
-
+const Carrossel = (props) => {
+  const [ arr, setArr ] = useState([ ...props.novoTeste ]);
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(null);
 
@@ -36,22 +16,27 @@ const Carrossel = () => {
   };
 
   return (
-    <main className="mainCarousel">  
+    <>  
       
       <Carousel
         activeIndex={index}
         direction={direction}
         onSelect={handleSelect}
-        className="carrousel"
-      >
+        className={props.className}
+      >        
         {arr.map((e, i) => (
-          <Carousel.Item key={e.link}>
+          
+          <Carousel.Item key={i}>
             <h1>{e.title}</h1>
-            <p>{e.text}</p>           
+            <p>{e.text}</p> 
+            <Menu></Menu>          
           </Carousel.Item>
         ))}        
       </Carousel>
-    </main>
+
+
+      
+    </>
   );
 };
 
