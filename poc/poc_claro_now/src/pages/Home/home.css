@@ -17,6 +17,9 @@
   display: grid;
 
 }
+.medalhas {
+  width: 30%
+}
 .carStyle{
   align-self: end;  
   width: 20%;

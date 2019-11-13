@@ -5,6 +5,7 @@ import YouTube from "../../assets/youtube";
 import ArrayCarrossel from "../../assets/teste";
 import Menu from "../../components/CardCarousel/CardCarousel";
 import Navbar from 'react-bootstrap/Navbar'
+import MedalsChart from '../../components/MedalsChart'
 
 const Home = () => {
   return (
@@ -19,8 +20,10 @@ const Home = () => {
         <section className="sectionCarrossel">
           <Carrossel
             novoTeste={ArrayCarrossel}
-            className="carrossel"
-          ></Carrossel>
+            className="carrossel"/>
+        </section>
+        <section className="medalhas">
+          <MedalsChart />
         </section>
         {/* <section className="modalidade">
           <Carrossel

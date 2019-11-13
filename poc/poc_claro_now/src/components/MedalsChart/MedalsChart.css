@@ -1,0 +1,48 @@
+.container {
+    margin: 1em;
+    margin-top: 2em;
+}
+
+.titleHeader{
+    color: #D3D3D3;
+    width: '70%';
+    font-weight: bold;
+}
+
+.medalCircle{
+    
+}
+
+.countryRow {
+    color: #DC143C;
+    font-weight: bold;
+}
+
+.numbers {
+    text-align: center; 
+    vertical-align: middle;
+}
+
+th {
+    padding-bottom: 1em;
+}
+
+.circleBase {
+    margin: auto;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    padding: 10px;
+}
+
+.gold {
+    background: yellow;
+}
+
+.silver {
+    background: silver;
+}
+
+.bronze {
+    background: brown;
+}
