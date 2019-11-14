@@ -138,7 +138,7 @@ class VideoShowCase extends React.Component {
             onReady = { this._onReadyMain }
             onStateChange = { this._onStateChangeMain }
           />
-        </div>
+        </div>v
         <div className="bar1" ref={this.youtubeRef1div}>
           <YouTube videoId = { this.state.child1Url }
             ref = { this.youtubeRef1 }
