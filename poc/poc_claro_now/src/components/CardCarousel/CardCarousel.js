@@ -20,52 +20,11 @@ const Menu = () => {
     }
     
   });
-
-  console.log(opts)
-  console.log(data)
-
-
   const onReady = event => {
     event.target.pauseVideo();
   const onReadyVideo = event => {
     event.target.setVolume(0);
-  };
-
-  const pegaClick = (evento, i, data) => {
-      let banana = i;
-
-      let date = data;
-
-      let xuxu;
-      
-      console.log('este sou eu',date)
-
-      console.log('fui clicado', banana)
-      
-     date.map=((e,index) => {
-       console.log('eu aqui de novo')
-      if( index ===  banana){
-        console.log(i)
-        xuxu({
-          height:'800',
-          width:'670',             
-          playerVars: {
-         autoplay: 1,      
-         modestbranding: 1,
-         rel:0,
-         playsinline:0
-       }
-
-      })  
-      console.log(opts)
-    } 
-       
-  })
-
-  return <link to='/video' />
-       
-  }
-  
+  }; 
   
   return (
     <>    
@@ -79,8 +38,7 @@ const Menu = () => {
                   opts={opts}
                   onReady = { onReadyVideo }
                 ></YouTube>
-                <div id={e.title} className='sobrepoe' onClick={
-                  (event) => pegaClick(event.target, i, data)}></div>                
+                <div id={e.title} className='sobrepoe'></div>                
               </section>
             ))}
           </section>
@@ -88,6 +46,7 @@ const Menu = () => {
       </div>
     </>
   );
-};
+}
+}
 
 export default Menu;
