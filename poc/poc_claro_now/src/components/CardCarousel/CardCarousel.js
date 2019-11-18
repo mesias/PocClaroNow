@@ -7,10 +7,13 @@ import YouTube from "react-youtube";
 const Menu = () => {
   const [data, setData] = useState([...ArrayCarrossel]);
   const [opts, setOpts] = useState({
-    height: "230",
-    width: "380",
+    height: window.innerHeight * 0.3,
+    width: window.innerWidth * 0.3,
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
+      controls: 0,
+      rel: 0,
+      fs: 0,
       autoplay: 1,
       modestbranding: 1
     }

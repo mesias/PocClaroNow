@@ -67,3 +67,13 @@
   background: #0000;
   padding: 5px;
 }
+
+.bar2up {
+  position:absolute;
+  /* display: none; */
+  bottom:5%;
+  right:30%;
+  width:20%;
+  height:20%;
+  z-index: 10;
+}

@@ -25,7 +25,6 @@ class VideoShowCase extends React.Component {
     this.youtubeRef1divUp = React.createRef();
     this.youtubeRef2divUp = React.createRef();
     this.youtubeRefMainDiv = React.createRef();
-
   }
 
 

@@ -4,6 +4,15 @@ const YouTube = {
         CampeonatoPiscinaCurta: "790oQi9qQuE",
         Rio2016Natacao: "KT9U4T89PWg",
     },
+    Modal: {
+        Esgrima: "2oDLEqi5160",
+        ArcoFeminino: "YAocqs-FzJ4",
+        AtletismoSalto: "_t-W3Vjb7C4",
+        CiclismoIndoor: "RoTydC1j_yU",
+        CiclismoBmx: "5k3wx7TJunQ",
+        GinasticaRitmica: "KWJ7pkYlLz0",
+        GinasticaSalto: "jiYaONGXA0o",
+    }
 };
 
 export default YouTube;

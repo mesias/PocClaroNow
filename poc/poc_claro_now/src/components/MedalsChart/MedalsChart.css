@@ -13,14 +13,20 @@
     
 }
 
+tr {
+    cursor: pointer;
+}
+
 .countryRow {
     color: #DC143C;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .numbers {
     text-align: center; 
     vertical-align: middle;
+    color: white;
 }
 
 th {
