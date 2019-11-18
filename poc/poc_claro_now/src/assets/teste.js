@@ -1,15 +1,18 @@
+
+import youtube from './youtube'
+
 const ArrayCarrossel = [
   {
     id: 356,
     id_iframe:'one',
-    link: "KWJ7pkYlLz0", 
+    link: youtube.Ano2015.Ginastica, 
     title: "First slide label",
     text: "Nulla vitae elit libero, a pharetra augue mollis interdum."
   },
   {
     id: 358,
     id_iframe:'two',
-    link: "KWJ7pkYlLz0",
+    link: youtube.Ano2015.PanFinalRevezamento4x200,
     title: "Second slide label",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
@@ -23,7 +26,7 @@ const ArrayCarrossel = [
   {
     id: 360,
     id_iframe:'four',
-    link: "gu2_sFFtT88",
+    link: youtube.Ano2015.Natacao,
     title: "Esse eu fix por conta",
     text: "Para ter certeza que estava funcionando :);"
   }

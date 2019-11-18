@@ -3,8 +3,10 @@ const YouTube = {
         PanFinalRevezamento4x200: "9xAxYxRv-xw",
         CampeonatoPiscinaCurta: "790oQi9qQuE",
         Rio2016Natacao: "KT9U4T89PWg",
+        Ginastica: "KWJ7pkYlLz0",
+        Natacao: "gu2_sFFtT88",
     },
-    Modal: {
+    Modalidades: {
         Esgrima: "2oDLEqi5160",
         ArcoFeminino: "YAocqs-FzJ4",
         AtletismoSalto: "_t-W3Vjb7C4",
@@ -12,6 +14,11 @@ const YouTube = {
         CiclismoBmx: "5k3wx7TJunQ",
         GinasticaRitmica: "KWJ7pkYlLz0",
         GinasticaSalto: "jiYaONGXA0o",
+        LevantamentoPeso: "C076lmr-YWI",
+        Natacao100:"EhT-Kvub2tE",
+        Natacao200: "VOAk0gxIxnw",
+        Corrida100: "0PY56riGBWc",
+        Corrida200: "qCNFeN2oKe4",
     }
 };
 

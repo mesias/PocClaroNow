@@ -19,8 +19,8 @@ const Menu = () => {
     }
   });
 
-  const onReady = event => {
-    event.target.pauseVideo();
+  const onReadyVideo = event => {
+    event.target.setVolume(0);
   };
 
   return (
@@ -33,7 +33,7 @@ const Menu = () => {
                 <YouTube
                   videoId={e.link}
                   opts={opts}
-                  className="youtube"
+                  onReady = { onReadyVideo }
                 ></YouTube>
               </section>
             ))}
