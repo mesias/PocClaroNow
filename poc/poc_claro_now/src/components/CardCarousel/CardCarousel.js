@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import ArrayCarrossel from "../../assets/teste";
 import "./CardCarousel.css";
 import YouTube from "react-youtube";
-import {Link} from 'react-router-dom';
-import { Redirect } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
 
-const Menu = () => {
+const Menu = (props) => {
   const [data, setData] = useState([...ArrayCarrossel]);
   const [opts, setOpts] = useState({
     height: window.innerHeight * 0.3,
@@ -29,26 +28,28 @@ const Menu = () => {
 
   
   return (
-    <>    
       <div className="content">
         <div className="content-container">
           <section className="container">
-            {data.map((e, i) => (
-              <section key={i} className="item">                
+            {data.map((e, i) => {
+              const arrVideos = data.map((ob) => ob.link)
+              arrVideos.splice(data.indexOf(e.link), 1)
+              return (<section key={i} className="item">                
                 <YouTube
                   videoId={e.link}
                   opts={opts}
                   onReady = { onReadyVideo }
                 ></YouTube>
-                <div id={e.title} className='sobrepoe'></div>                
+                <div id={e.title} className='sobrepoe' onClick={() => props.history.push('/video', {
+                                    mainVideo: e.link,
+                                    thumbVideos: arrVideos,
+                                  })}></div>                
               </section>
-            ))}
+            )})}
           </section>
         </div>
       </div>
-    </>
   );
 }
 
-
-export default Menu;
+export default withRouter(Menu);
