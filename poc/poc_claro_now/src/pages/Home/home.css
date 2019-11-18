@@ -23,7 +23,7 @@
   display: grid;
 }
 .medalhas {
-  position: fixed;
+  /* position: fixed; */
   bottom: 15%;
   width: 30%
 }

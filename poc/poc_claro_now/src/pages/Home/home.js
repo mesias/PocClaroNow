@@ -9,6 +9,7 @@ import Modalidades from "../../components/esportes/sports"
 
 const Home = () => {
   return (
+    
     <main className="container-main">
       <section className="container-nav">
         <NavBarHome></NavBarHome>
@@ -22,7 +23,7 @@ const Home = () => {
         <MedalsChart />
       </section>
       <section className='modalities'> 
-        <Modalidades></Modalidades>            
+        {/* <Modalidades></Modalidades>             */}
       </section>
     </main>
   );

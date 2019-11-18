@@ -20,11 +20,13 @@ const Menu = () => {
     }
     
   });
-  const onReady = event => {
-    event.target.pauseVideo();
+  // const onReady = event => {
+  //   event.target.pauseVideo();
+  // };
   const onReadyVideo = event => {
     event.target.setVolume(0);
-  }; 
+  };
+
   
   return (
     <>    
@@ -47,6 +49,6 @@ const Menu = () => {
     </>
   );
 }
-}
+
 
 export default Menu;
