@@ -1,18 +1,20 @@
+import youtube from './youtube'
+
 const medals = {
     'Estados Unidos': {
         medals: [21, 21, 21],
         modals: {
             'Natação': {
-                '100m': [1, 0, 0],
-                '200m': [0, 1, 0],
+                '200m': [0, 1, 0, youtube.Modalidades.Natacao200],
+                '100m': [1, 0, 0, youtube.Modalidades.Natacao100],
             },
             'Ginástica': {
-                'Rítmica': [1, 0, 0],
-                'Cavalo': [0, 0, 1]
+                'Rítmica': [1, 0, 0, youtube.Modalidades.GinasticaRitmica],
+                'Cavalo': [0, 0, 1, youtube.Modalidades.GinasticaSalto]
             },
             'Atletismo': {
-                '100m': [0, 0, 1],
-                '200m': [0, 1, 0],
+                '100m': [0, 0, 1, youtube.Modalidades.Corrida100],
+                '200m': [0, 1, 0, youtube.Modalidades.Corrida200],
             }
         }
     },
@@ -20,16 +22,16 @@ const medals = {
         medals: [12, 12, 12],
         modals: {
             'Natação': {
-                '100m': [1, 0, 0],
-                '200m': [0, 1, 0],
+                '200m': [0, 1, 0, youtube.Modalidades.Natacao200],
+                '100m': [1, 0, 0, youtube.Modalidades.Natacao100],
             },
             'Ginástica': {
-                'Rítmica': [1, 0, 0],
-                'Cavalo': [0, 0, 1]
+                'Rítmica': [1, 0, 0, youtube.Modalidades.GinasticaRitmica],
+                'Cavalo': [0, 0, 1, youtube.Modalidades.GinasticaSalto]
             },
             'Atletismo': {
-                '100m': [0, 0, 1],
-                '200m': [0, 1, 0],
+                '100m': [0, 0, 1, youtube.Modalidades.Corrida100],
+                '200m': [0, 1, 0, youtube.Modalidades.Corrida200],
             }
         }
     },
@@ -37,16 +39,16 @@ const medals = {
         medals: [21, 21, 21],
         modals: {
             'Natação': {
-                '100m': [1, 0, 0],
-                '200m': [0, 1, 0],
+                '200m': [0, 1, 0, youtube.Modalidades.Natacao200],
+                '100m': [1, 0, 0, youtube.Modalidades.Natacao100],
             },
             'Ginástica': {
-                'Rítmica': [1, 0, 0],
-                'Cavalo': [0, 0, 1]
+                'Rítmica': [1, 0, 0, youtube.Modalidades.GinasticaRitmica],
+                'Cavalo': [0, 0, 1, youtube.Modalidades.GinasticaSalto]
             },
             'Atletismo': {
-                '100m': [0, 0, 1],
-                '200m': [0, 1, 0],
+                '100m': [0, 0, 1, youtube.Modalidades.Corrida100],
+                '200m': [0, 1, 0, youtube.Modalidades.Corrida200],
             }
         }
     },
@@ -54,16 +56,16 @@ const medals = {
         medals: [32, 32, 32],
         modals: {
             'Natação': {
-                '100m': [1, 0, 0],
-                '200m': [0, 1, 0],
+                '200m': [0, 1, 0, youtube.Modalidades.Natacao200],
+                '100m': [1, 0, 0, youtube.Modalidades.Natacao100],
             },
             'Ginástica': {
-                'Rítmica': [1, 0, 0],
-                'Cavalo': [0, 0, 1]
+                'Rítmica': [1, 0, 0, youtube.Modalidades.GinasticaRitmica],
+                'Cavalo': [0, 0, 1, youtube.Modalidades.GinasticaSalto]
             },
             'Atletismo': {
-                '100m': [0, 0, 1],
-                '200m': [0, 1, 0],
+                '100m': [0, 0, 1, youtube.Modalidades.Corrida100],
+                '200m': [0, 1, 0, youtube.Modalidades.Corrida200],
             }
         }
     },
@@ -71,16 +73,16 @@ const medals = {
         medals: [4, 4, 4],
         modals: {
             'Natação': {
-                '100m': [1, 0, 0],
-                '200m': [0, 1, 0],
+                '200m': [0, 1, 0, youtube.Modalidades.Natacao200],
+                '100m': [1, 0, 0, youtube.Modalidades.Natacao100],
             },
             'Ginástica': {
-                'Rítmica': [1, 0, 0],
-                'Cavalo': [0, 0, 1]
+                'Rítmica': [1, 0, 0, youtube.Modalidades.GinasticaRitmica],
+                'Cavalo': [0, 0, 1, youtube.Modalidades.GinasticaSalto]
             },
             'Atletismo': {
-                '100m': [0, 0, 1],
-                '200m': [0, 1, 0],
+                '100m': [0, 0, 1, youtube.Modalidades.Corrida100],
+                '200m': [0, 1, 0, youtube.Modalidades.Corrida200],
             }
         }
     },

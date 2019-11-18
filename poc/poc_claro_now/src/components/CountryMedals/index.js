@@ -8,8 +8,9 @@ import Table from "react-bootstrap/Table"
 import Nav from "react-bootstrap/Nav"
 import medals_mock from '../../assets/medals_mock';
 import './CountryMedals.css'
+import { withRouter } from 'react-router-dom';
 
-export default (props) => {
+const medals = (props) => {
     const modals = props.country ? medals_mock[props.country].modals : {}
     console.log(modals)
     return (
@@ -45,11 +46,14 @@ export default (props) => {
                         <tbody>
                         {
                             Object.keys(modals[modkey]).map((k, ik) =>
-                                <tr>
-                                    <td>{k}</td>
+                                <tr key={ik} onClick={modals[modkey][k].length === 3 ? false : () =>
+                                  props.history.push('/video', {
+                                    mainVideo: modals[modkey][k][3],
+                                  })} >
+                                    <td key={`ld_${ik}`}>{k}</td>
                                     { 
-                                        modals[modkey][k].map((v) =>
-                                            <td>{v}</td>
+                                        modals[modkey][k].slice(0,2).map((v, i) =>
+                                            <td key={i}>{v}</td>
                                         )
                                     }
                                 </tr>
@@ -70,3 +74,5 @@ export default (props) => {
       </Modal>
     );
   }
+
+  export default withRouter(medals);
