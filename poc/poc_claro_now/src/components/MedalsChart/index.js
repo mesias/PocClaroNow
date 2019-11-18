@@ -1,8 +1,11 @@
 import React from "react";
 import medals_mock from '../../assets/medals_mock';
+import MedalsModal from '../../components/CountryMedals'
 import './MedalsChart.css'
 
 const MedalsChart = () => {
+    const [selectedCountry, setSelectedCountry] = React.useState(null);
+
     const renderTableHeader = () => {
         return (
             <tr>
@@ -15,18 +18,16 @@ const MedalsChart = () => {
     }
 
     const renderTableData = () => {
-        return medals_mock.map((medlist, idxm) => {
+        return Object.keys(medals_mock).map((medkey, idxm) => {
+            const medlist = medals_mock[medkey].medals;
             const cols = medlist.map((medcol, idxl) => {
-                if(idxl === 0) {
-                    return (<td id={`col_${idxl}`} className="countryRow">{medcol}</td>);
-                } else {
-                    return (<td id={`col_${idxl}`} className="numbers">{medcol}</td>);
-                }
-                
+                return (<td id={`col_${idxl}`} className="numbers">{medcol}</td>);
             })
-            return (<tr key={`lin_${idxm}`}>{cols}</tr>);
+            return (<tr key={`lin_${idxm}`} onClick={() => setSelectedCountry(medkey)}>
+                <td id={`col_head${idxm}`} className="countryRow">{medkey}</td>
+                {cols}
+                </tr>);
         })
-        
     }
 
 
@@ -38,6 +39,11 @@ const MedalsChart = () => {
               {renderTableData()}
            </tbody>
         </table>
+        <MedalsModal 
+            show={selectedCountry != null}
+            onHide={() => setSelectedCountry(null)}
+            country={selectedCountry}
+        />
      </div>
     )
 };

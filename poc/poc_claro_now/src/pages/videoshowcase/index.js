@@ -6,16 +6,20 @@ import "./video.css";
 class VideoShowCase extends React.Component {
   constructor(props) {
     super(props)
+    const state = this.props.location.state
+    console.log("Nav state:", state)
     this.state = {
-      mainUrl: props.mainVideo,
+      mainUrl: state.mainVideo,
       width: window.innerWidth,
       height: window.innerHeight - 10,
       childHeight: window.innerHeight * 0.2,
       childWidth: window.innerWidth * 0.2,
-      child1Url: props.thumbVideos[0],
-      child2Url: props.thumbVideos[1],
+      child1Url: state.thumbVideos ? state.thumbVideos[0] : null,
+      child2Url: state.thumbVideos ? state.thumbVideos[1] : null,
       hover: false,
     }
+
+    console.log("Videos:", this.state.mainUrl, this.state.child1Url, this.state.child2Url);
 
     this.youtubeRefMain = React.createRef();
     this.youtubeRef1 = React.createRef();
@@ -25,7 +29,6 @@ class VideoShowCase extends React.Component {
     this.youtubeRef1divUp = React.createRef();
     this.youtubeRef2divUp = React.createRef();
     this.youtubeRefMainDiv = React.createRef();
-
   }
 
 
@@ -130,7 +133,8 @@ class VideoShowCase extends React.Component {
 
     return ( 
       < div className = "holder">
-        <div  onMouseMove={this.toggleHover} ref={this.youtubeRefMainDiv}>
+        <div ref={this.youtubeRefMainDiv}>
+        {/* <div  onMouseMove={this.toggleHover} ref={this.youtubeRefMainDiv}> */}
           <YouTube videoId = { this.state.mainUrl }
             id="mainyoutube"
             ref = { this.youtubeRefMain }
@@ -138,25 +142,29 @@ class VideoShowCase extends React.Component {
             onReady = { this._onReadyMain }
             onStateChange = { this._onStateChangeMain }
           />
-        </div>v
-        <div className="bar1" ref={this.youtubeRef1div}>
-          <YouTube videoId = { this.state.child1Url }
-            ref = { this.youtubeRef1 }
-            opts = { opts_min1 }
-            onReady = { this._onReadyMin }
-          />
         </div>
+        { this.state.child1Url ?
+          <div className="bar1" ref={this.youtubeRef1div}>
+            <YouTube videoId = { this.state.child1Url }
+              ref = { this.youtubeRef1 }
+              opts = { opts_min1 }
+              onReady = { this._onReadyMin }
+            />
+          </div> : ""
+        }
+        { this.state.child1Url ?
         <div className="bar1up" onClick={() => this.changeVideo(0)} ref={ this.youtubeRef1divUp }>
-        </div>
+        </div> : "" }
+        { this.state.child2Url ?
         <div className="bar2" ref={this.youtubeRef2div}>
           <YouTube videoId = { this.state.child2Url }
             ref = { this.youtubeRef2 }
             opts = { opts_min2 }
             onReady = { this._onReadyMin }
-          />
-        </div>
+          /> </div> : "" }
+        { this.state.child2Url ?
         <div className="bar2up" onClick={() => this.changeVideo(1)}  ref={ this.youtubeRef2divUp }>
-        </div>
+        </div> : "" }
       </div>
     );
   };
@@ -172,7 +180,7 @@ class VideoShowCase extends React.Component {
     // event.target.playVideo();
     // this.youtubeRefMain.current.container.onmousemove = (evt) => console.log('move', evt)
     // this.youtubeRef1.current.container.onclick = (evt) => console.log('onclick')
-    this.toggleHover()
+    // this.toggleHover()
   }
 
   _onStateChangeMain = (event) => {

@@ -7,15 +7,16 @@ import { Redirect } from 'react-router-dom'
 
 const Menu = () => {
   const [data, setData] = useState([...ArrayCarrossel]);
-  let [opts, setOpts] = useState({
-    height: "230",
-    width: "380",
-    zIndex:-1,    
+  const [opts, setOpts] = useState({
+    height: window.innerHeight * 0.3,
+    width: window.innerWidth * 0.3,
     playerVars: {
-      // autoplay: 1,      
-      // modestbranding: 1,
-      // rel:0,
-      // playsinline:0
+      // https://developers.google.com/youtube/player_parameters
+      controls: 0,
+      rel: 0,
+      fs: 0,
+      autoplay: 1,
+      modestbranding: 1
     }
     
   });
@@ -26,6 +27,8 @@ const Menu = () => {
 
   const onReady = event => {
     event.target.pauseVideo();
+  const onReadyVideo = event => {
+    event.target.setVolume(0);
   };
 
   const pegaClick = (evento, i, data) => {
@@ -74,9 +77,7 @@ const Menu = () => {
                 <YouTube
                   videoId={e.link}
                   opts={opts}
-                  className="youtube" 
-                  onClick={
-                    (event) => pegaClick(event.target)}                                  
+                  onReady = { onReadyVideo }
                 ></YouTube>
                 <div id={e.title} className='sobrepoe' onClick={
                   (event) => pegaClick(event.target, i, data)}></div>                
