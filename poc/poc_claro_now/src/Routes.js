@@ -11,7 +11,7 @@ const Routes = () =>(
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
         <Route exact path='/' component={Home}></Route>
-        <Route exact path='/video' render={() => 
+        <Route exact path='/video' component={VideoShowCase} render={() => 
           <VideoShowCase 
             mainVideo={YouTube.Ano2015.PanFinalRevezamento4x200} 
             thumbVideos={[YouTube.Ano2015.CampeonatoPiscinaCurta, YouTube.Ano2015.Rio2016Natacao]} />}>   

@@ -3,6 +3,9 @@ import "./home.css";
 import NavBarHome from "../../components/NavBar/navBar";
 import Menu from "../../components/CardCarousel/CardCarousel";
 import MedalsChart from "../../components/MedalsChart";
+import Modalidades from "../../components/esportes/sports"
+
+
 
 const Home = () => {
   return (
@@ -17,6 +20,9 @@ const Home = () => {
       </section>
       <section className="medalhas">
         <MedalsChart />
+      </section>
+      <section className='modalities'> 
+        <Modalidades></Modalidades>            
       </section>
     </main>
   );

@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  padding: 0 55px;
+  padding: 0 55px;  
 }
 .container:hover .item {
   transform: translateX(-25%);
@@ -12,6 +12,7 @@
   margin: 0 2px;
   transition: transform 300ms ease 100ms;
   width: 50vw;
+  z-index: 1;
 }
 
 .item:hover ~ .item {
@@ -66,4 +67,14 @@
 .youtube{
   background: #0000;
   padding: 5px;
+  z-index: -1;
+}
+
+.sobrepoe{
+  z-index: 50;
+  background: rgba(255, 255, 0, 0.5);  
+  height: 250px;
+  width: 380px;
+  margin-top: -20vw;
+  position: relative;
 }
