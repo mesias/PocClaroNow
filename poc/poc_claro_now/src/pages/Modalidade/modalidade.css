@@ -1,0 +1,36 @@
+.container-hd{
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.container-banner{
+  width: 100%;
+  height: 20%;
+  color: aliceblue;
+}
+
+.basqueteImg{
+  width: 100%;
+}
+.buttonModalidades{
+  background: none;
+  grid-row-start: 1;
+  width: 18vw;
+  height: 10vw;
+  border: none;
+  margin: 2px;
+}
+
+.btnContMod{
+  background: #1B1B1B;
+  width: 100%;
+  color: antiquewhite;
+  /* grid-row-start: 2; */
+  margin-left: 3rem;
+}
+.imgbtnMod{
+  width: 29vw;
+  height: 12vw;
+}
+
