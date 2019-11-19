@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 10% 50% 40%;
+  grid-template-columns: 5% 55% 40%;
   height: 5vw;
   grid-template-rows: 0.5vw 3.5vw 1vw;
 }
@@ -28,28 +28,22 @@
   grid-column-start: 2;
 }
 
-.box-a{
-  grid-row-start: 2;  
-  align-self: center;
-  padding: 15px;
-}
-
 .saudacao{
-  grid-column-start: 2; 
-  align-items: center;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  text-align: start;
   /* margin-top: 10px;  */
 }
 
 .saud-paragrafo{
   color: #FBF5E7;
-  
 }
 
 .container-logo{
   display: grid;
   grid-column-start: 3;
   grid-row-start: 2;
-  grid-template-columns: 60% 30% 5%;
+  grid-template-columns: 60% 30%;
   align-items: center;  
 }
 
@@ -94,7 +88,7 @@
 }
 .logoEspn{
   height: 3vw;
-  padding-right: unset;
+  padding-right: none;
   justify-self: start;
 }
 .tooltip{
