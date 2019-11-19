@@ -8,10 +8,10 @@ import { Redirect } from 'react-router-dom'
 const Menu = () => {
   const [data, setData] = useState([...ArrayCarrossel]);
   const [opts, setOpts] = useState({
-    height: window.innerHeight * 0.3,
-    width: window.innerWidth * 0.3,
+    
+    width: '420',
+    height: '220',
     playerVars: {
-      // https://developers.google.com/youtube/player_parameters
       controls: 0,
       rel: 0,
       fs: 0,
@@ -28,8 +28,8 @@ const Menu = () => {
   
   return (
     <>    
-      <div className="content">
-        <div className="content-container">
+      {/* <div className="content">         */}
+        {/* <div className="content-container"> */}
           <section className="container">
             {data.map((e, i) => (
               <section key={i} className="item">                
@@ -38,12 +38,14 @@ const Menu = () => {
                   opts={opts}
                   onReady = { onReadyVideo }
                 ></YouTube>
-                <div id={e.title} className='sobrepoe'></div>                
+                {/* <div id={e.title} className='sobrepoe'></div>                 */}
               </section>
             ))}
           </section>
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
+
+      
     </>
   );
 }

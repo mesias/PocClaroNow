@@ -5,7 +5,7 @@ import YouTube from "react-youtube";
 
 
 
-const HomeDestaque = () => {
+const HomeDestaque = () => {  
 
   return(
     <section className='container-hd'>

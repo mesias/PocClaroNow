@@ -13,18 +13,37 @@ const Home = () => {
     <main className="container-main">
       <section className="container-nav">
         <NavBarHome></NavBarHome>
-      </section>
-      {/* <section>
+      </section>     
         <section className="sectionCarrossel">         
           <Menu></Menu>
+        </section> 
+      <section className='containerMedalhas'>
+        <h5>MEDALHAS</h5>         
+        <section className='btnContainer'>
+          <button className='buttonHome'></button>
+          <button className='buttonHome'></button>
+          <button className='buttonHome'></button>
+          <button className='buttonHome'></button>
+          <button className='buttonHome'></button>
+          <button className='buttonHome'></button>
+          <button className='buttonHome'></button>
+          <button className='buttonHome'></button>
         </section>
       </section>
-      <section className="medalhas">
-        <MedalsChart />
-      </section>
-      <section className='modalities'> 
-        <Modalidades></Modalidades>            
-      </section> */}
+      <section>
+      <section className=' containerMedalhas containerModalidades'>
+        <h5>MODALIDADES EM DESTAQUE</h5>         
+        <section className='btnContainer'>
+          <button className='buttonModalidades'></button>
+          <button className='buttonModalidades'></button>
+          <button className='buttonModalidades'></button>
+          <button className='buttonModalidades'></button>
+          <button className='buttonModalidades'></button>
+          <button className='buttonModalidades'></button>
+          <button className='buttonModalidades'></button>
+        </section>
+      </section> 
+      </section>        
     </main>
   );
 };

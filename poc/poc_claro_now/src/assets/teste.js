@@ -15,14 +15,7 @@ const ArrayCarrossel = [
     link: youtube.Ano2015.PanFinalRevezamento4x200,
     title: "Second slide label",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  // {
-  //   id: 359,
-  //   id_iframe:'threee',
-  //   link: "KWJ7pkYlLz0",
-  //   title: "Third slide label",
-  //   text: "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-  // },
+  },  
   {
     id: 360,
     id_iframe:'four',
@@ -30,6 +23,7 @@ const ArrayCarrossel = [
     title: "Esse eu fix por conta",
     text: "Para ter certeza que estava funcionando :);"
   }
+  
 
 ];
 
