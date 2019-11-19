@@ -1,0 +1,49 @@
+.container-main{
+    width: 100%;
+    height:100%;
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scrollbar-color: black;
+}
+.frame{
+    width: 100%;
+    height:100%;
+}
+.bar1{
+    position:absolute;
+    /* display: none; */
+    bottom: 5%;
+    right:5%;
+    width:20%;
+    height:20%;
+}
+
+.bar1up{
+    position:absolute;
+    /* display: none; */
+    bottom: 5%;
+    right:5%;
+    width:20%;
+    height:20%;
+    z-index: 10;
+}
+
+.bar2{
+    position:absolute;
+    /* display: none; */
+    bottom:5%;
+    right:30%;
+    width:20%;
+    height:20%;
+}
+
+.bar2up {
+    position:absolute;
+    /* display: none; */
+    bottom:5%;
+    right:30%;
+    width:20%;
+    height:20%;
+    z-index: 10;
+}

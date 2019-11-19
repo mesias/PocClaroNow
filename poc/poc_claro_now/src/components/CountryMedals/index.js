@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
 import Table from "react-bootstrap/Table"
 import Nav from "react-bootstrap/Nav"
-import medals_mock from '../../assets/medals_mock';
+import medals_mock from '../../consts/medals_mock';
 import './CountryMedals.css'
 import { withRouter } from 'react-router-dom';
 

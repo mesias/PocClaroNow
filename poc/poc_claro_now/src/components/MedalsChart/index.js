@@ -1,5 +1,5 @@
 import React from "react";
-import medals_mock from '../../assets/medals_mock';
+import medals_mock from '../../consts/medals_mock';
 import MedalsModal from '../../components/CountryMedals'
 import './MedalsChart.css'
 
