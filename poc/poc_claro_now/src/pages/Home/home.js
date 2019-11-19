@@ -11,48 +11,50 @@ import MedalhaRs from "../../assets/img/home-medalha-russia.png";
 import MedalhaPt from "../../assets/img/home-medalha-portugal.png";
 import MedalhaAl from "../../assets/img/home-medalha-alemanha.png";
 import MedalhaFr from "../../assets/img/home-medalha-franca.png";
-import BasqueteM from "../../assets/img/home-modalidade-basquete.png"
+import BasqueteM from "../../assets/img/home-modalidade-basquete.png";
 import BoxeM from "../../assets/img/home-modalidade-boxe.png";
 import FutebolM from "../../assets/img/home-modalidade-futebol.png";
 import MergulhoM from "../../assets/img/home-modalidade-mergulho.png";
 import VoleibalM from "../../assets/img/home-modalidade-volei.png";
-import TelaDestaque from '../../assets/img/home-medalhas-vivo-1.png';
-import TlDestTwo from '../../assets/img/home-medalhas-vivo-2.png';
-import TlDestThree from '../../assets/img/home-medalhas-vivo-3.png';
+import TelaDestaque from "../../assets/img/home-medalhas-vivo-1.png";
+import TlDestTwo from "../../assets/img/home-medalhas-vivo-2.png";
+import TlDestThree from "../../assets/img/home-medalhas-vivo-3.png";
 
-const Home = () => {
-
-  const trocaFundo =() => {
-  //  return src={}
-  }
+const Home = () => { 
 
   return (
     <main className="container-main">
       <section className="container-nav">
         <NavBarHome></NavBarHome>
-      </section>      
-      <section className="sectionCarrossel">
-      <section className='contTitle'>
-        <h5 className='title'>AO VIVO</h5>
       </section>
-      <section className='sectionAoVivo'>
-        <button className="btnAoVivo">
-          <img src={TelaDestaque} className="imgbtnVivo"></img>
-        </button>
-        <button className="btnAoVivo">
-          <img src={TlDestTwo} className="imgbtnVivo"></img>
-        </button>
-        <button className="btnAoVivo">
-          <img src={TlDestThree} className="imgbtnVivo"></img>
-        </button>
+      <section className="sectionCarrossel">
+        <section className="contTitle">
+          <h5 className="title">
+            <font size="4" face="FturaStd ">
+              AO VIVO
+            </font>
+          </h5>
         </section>
-
+        <section className="sectionAoVivo">
+          <button className="btnAoVivo">
+            <img src={TelaDestaque} className="imgbtnVivo"></img>
+          </button>
+          <button className="btnAoVivo">
+            <img src={TlDestTwo} className="imgbtnVivo"></img>
+          </button>
+          <button className="btnAoVivo">
+            <img src={TlDestThree} className="imgbtnVivo"></img>
+          </button>
+        </section>
       </section>
       <section className="containerMedalhas">
-        <h5>MEDALHAS</h5>
+        <h5 className="titleTwo">
+          <font size="4" face="FturaStd ">
+            MEDALHAS
+          </font>
+        </h5>
         <section className="btnContainer">
-          <button className="buttonTroca">
-          </button>
+          <button className="buttonTroca"></button>
           <button className="buttonHome">
             <img src={MedalhaUsa} className="imgbtn"></img>
           </button>
@@ -75,7 +77,11 @@ const Home = () => {
       </section>
       <section>
         <section className=" containerMedalhas containerModalidades">
-          <h5>MODALIDADES EM DESTAQUE</h5>
+          <h5 className="titleTwo">            
+            <font size="4" face="FturaStd ">
+              MODALIDADES EM DESTAQUE
+            </font>
+          </h5>
           <section className="btnContMod">
             <button className="buttonModalidades">
               <img src={BasqueteM} className="imgbtnMod"></img>
@@ -86,15 +92,15 @@ const Home = () => {
             <button className="buttonModalidades">
               <img src={FutebolM} className="imgbtnMod"></img>
             </button>
-            <button className="buttonModalidades">              
+            <button className="buttonModalidades">
               <img src={MergulhoM} className="imgbtnMod"></img>
             </button>
-            <button className="buttonModalidades">             
+            <button className="buttonModalidades">
               <img src={VoleibalM} className="imgbtnMod"></img>
             </button>
           </section>
         </section>
-      </section>      
+      </section>
     </main>
   );
 };
