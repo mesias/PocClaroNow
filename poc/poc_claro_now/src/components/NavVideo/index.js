@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import "./navBar.css";
+import "./navVideo.css";
 import imagemap from '../../consts/imagemap'
 
 const NavBarHome = () => {
@@ -15,10 +13,7 @@ const NavBarHome = () => {
         </section>
         <h1 className="saudacao">
           <img src={imagemap.espnLogo} className="logo-claro logoEspn" />
-          {/* <a className="estatisticas">BASQUETE: EUA X SÉRVIA - AO VIVO</a> */}
-          <img src={imagemap.claroNow} className="logo-claro logoClaroNow" />
-          <img src={imagemap.logoNetClaro} className="logo-claro" />
-          <img src={imagemap.logoOlimpiadas}  className='logo-claro logoOlimpiadas'/>
+          <a className="estatisticas">BASQUETE: EUA X SÉRVIA - AO VIVO</a>
         </h1>
         <section className="container-logo">
           <a className="estatisticas">ESTATÍSTICAS</a>
