@@ -16,6 +16,9 @@ import BoxeM from "../../assets/img/home-modalidade-boxe.png";
 import FutebolM from "../../assets/img/home-modalidade-futebol.png";
 import MergulhoM from "../../assets/img/home-modalidade-mergulho.png";
 import VoleibalM from "../../assets/img/home-modalidade-volei.png";
+import TelaDestaque from '../../assets/img/home-medalhas-vivo-1.png';
+import TlDestTwo from '../../assets/img/home-medalhas-vivo-2.png';
+import TlDestThree from '../../assets/img/home-medalhas-vivo-3.png';
 
 const Home = () => {
   return (
@@ -27,7 +30,18 @@ const Home = () => {
       <section className='contTitle'>
         <h5 className='title'>AO VIVO</h5>
       </section>
-        <Menu></Menu>
+      <section className='sectionAoVivo'>
+        <button className="btnAoVivo">
+          <img src={TelaDestaque} className="imgbtnVivo"></img>
+        </button>
+        <button className="btnAoVivo">
+          <img src={TlDestTwo} className="imgbtnVivo"></img>
+        </button>
+        <button className="btnAoVivo">
+          <img src={TlDestThree} className="imgbtnVivo"></img>
+        </button>
+        </section>
+
       </section>
       <section className="containerMedalhas">
         <h5>MEDALHAS</h5>

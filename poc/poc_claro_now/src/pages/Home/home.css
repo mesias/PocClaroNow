@@ -8,23 +8,27 @@
   background:  #1B1B1B; 
   overflow: hidden;
 }
-.title{
-  margin: 1rem 0 0 3rem; 
-  /* color: yellow;   */
-}
-
 .sectionCarrossel{
   width: 100%;
   height: 18%;
   display: grid;
+  grid-template-rows: 3rem 12rem;
+  
+}
+.title{
+  margin: 1rem 0 0 3rem; 
+  /* color: yellow;   */
+}
+.sectionAoVivo{
+  background: #1B1B1B;
+  width: 100%;
+  /* height: 30%; */
+  color: antiquewhite;
+  grid-row-start: 2;
+  margin-left: 3rem;
 }
 
-.carrossel{
-  background: rgb(6, 6, 34);
-  width: 100%;
-  height: 30%;
-  color: antiquewhite;
-}
+
 .modalidade{
   width: 20%;
   height: 10%;
@@ -53,6 +57,20 @@
   margin-left: 3rem;
 }
 
+.btnAoVivo{
+  width: 30vw;
+  height: 12vw;
+  background: none;
+  border: none;
+}
+.btnAoVivo:focus{
+  outline: none;
+}
+
+.imgbtnVivo{ 
+  width: 29vw;
+  height: 10vw;
+}
 .btnContainer{
   width: 84rem;
   display: grid;
@@ -68,7 +86,7 @@
   /* border: 2px solid white;   */
 }
 
-.buttonHome:focus{
+.buttonHome:focus {
   outline:none;
 }
 
