@@ -15,7 +15,7 @@ const NavBarHome = () => {
 
   return (
     <section className="container-nav">
-      <Navbar className="nav-bar">
+      <nav className="navBar">
         <section className='logo-back'>
         <i className="material-icons icon-left">keyboard_arrow_left</i>
         </section>
@@ -47,10 +47,10 @@ const NavBarHome = () => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip}
           >
-              <i class="fas fa-search"></i>
+              <i className="fas fa-search"></i>
           </OverlayTrigger>
         </section>
-      </Navbar>
+      </nav>
     </section>
   );
 };
