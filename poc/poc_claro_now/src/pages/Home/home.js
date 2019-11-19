@@ -4,7 +4,7 @@ import NavBarHome from "../../components/NavBar/navBar";
 import Menu from "../../components/CardCarousel/CardCarousel";
 import MedalsChart from "../../components/MedalsChart";
 import Modalidades from "../../components/esportes/sports";
-import MedalhaBrasil from "../../assets/img/home-medalha-brasil.png";
+import MedalhaBrasil from "../../assets/img/transparentBrasil.png";
 import MedalhaUsa from "../../assets/img/home-medalha-eua.png";
 import MedalhaJp from "../../assets/img/home-medalha-japao.png";
 import MedalhaRs from "../../assets/img/home-medalha-russia.png";
@@ -21,6 +21,11 @@ import TlDestTwo from '../../assets/img/home-medalhas-vivo-2.png';
 import TlDestThree from '../../assets/img/home-medalhas-vivo-3.png';
 
 const Home = () => {
+
+  const trocaFundo =() => {
+  //  return src={}
+  }
+
   return (
     <main className="container-main">
       <section className="container-nav">
@@ -46,8 +51,7 @@ const Home = () => {
       <section className="containerMedalhas">
         <h5>MEDALHAS</h5>
         <section className="btnContainer">
-          <button className="buttonHome">
-            <img src={MedalhaBrasil} className="imgbtn"></img>
+          <button className="buttonTroca">
           </button>
           <button className="buttonHome">
             <img src={MedalhaUsa} className="imgbtn"></img>
