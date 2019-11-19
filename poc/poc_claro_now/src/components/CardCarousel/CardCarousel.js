@@ -10,7 +10,7 @@ const Menu = () => {
   const [opts, setOpts] = useState({
     
     width: '420',
-    height: '220',
+    height: '190',
     playerVars: {
       controls: 0,
       rel: 0,
