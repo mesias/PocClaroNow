@@ -1,6 +1,5 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Switch, Route, /* Redirect */} from 'react-router-dom';
-import YouTube from './assets/youtube'
 import Modalidade from './pages/Modalidade/modalidade';
 
 const Home = lazy(() => import('./pages/Home/home'));

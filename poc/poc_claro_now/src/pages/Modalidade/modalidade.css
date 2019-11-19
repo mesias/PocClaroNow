@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   display: grid;
+  background: #1B1B1B;
+
 }
 
 .container-banner{
@@ -13,24 +15,51 @@
 .basqueteImg{
   width: 100%;
 }
-.buttonModalidades{
-  background: none;
-  grid-row-start: 1;
-  width: 18vw;
-  height: 10vw;
-  border: none;
-  margin: 2px;
+@font-face {
+  font-family: FuturaStd;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../assets/Fontes/FuturaStd-CondensedBold.otf);
 }
 
-.btnContMod{
+.titleMod{
+  margin: 1rem 0 0 4rem; 
+  color: #E0C54D;
+  font-weight: bolder;
+}
+
+.btnMod{
   background: #1B1B1B;
   width: 100%;
   color: antiquewhite;
   /* grid-row-start: 2; */
   margin-left: 3rem;
+  grid-template-rows: 25rem;
 }
-.imgbtnMod{
+
+.Modbtn{
+  background: none;
+  grid-row-start: 1;
+  width: 30vw;
+  height: 15vw;
+  border: none;
+  margin: 2px;
+}
+.btnModimg{
   width: 29vw;
+  height: 12vw;
+}
+.destbtn{
+  background: none;
+  grid-row-start: 1;
+  width: 18vw;
+  height: 15vw;
+  border: none;
+  margin: 2px;
+}
+
+.btnDestimg{
+  width: 17vw;
   height: 12vw;
 }
 

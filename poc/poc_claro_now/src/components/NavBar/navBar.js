@@ -39,7 +39,7 @@ const NavBarHome = () => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip}
           >
-            <a className="logout">MODADLIDADES</a>
+            <a className="logout">MODALIDADES</a>
           </OverlayTrigger>
 
           <OverlayTrigger
