@@ -27,7 +27,7 @@ const VideoShowCase = (props) => {
   }
   
   const width = window.innerWidth;
-  const height = window.innerHeight - vwTOpx(5.4);
+  const height = (window.innerHeight - vwTOpx(5.4));
 
   const opts = {
     height: height,
