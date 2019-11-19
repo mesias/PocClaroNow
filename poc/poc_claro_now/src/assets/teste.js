@@ -1,5 +1,5 @@
 
-import youtube from './youtube'
+import youtube from '../consts/youtube'
 
 const ArrayCarrossel = [
   {
