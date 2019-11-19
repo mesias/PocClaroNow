@@ -76,7 +76,7 @@ const Home = () => {
             </button>
           </section>
         </section>
-      </section>
+      </section>      
     </main>
   );
 };
