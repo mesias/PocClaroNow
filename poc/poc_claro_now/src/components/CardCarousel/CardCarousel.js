@@ -20,9 +20,7 @@ const Menu = () => {
     }
     
   });
-  // const onReady = event => {
-  //   event.target.pauseVideo();
-  // };
+  
   const onReadyVideo = event => {
     event.target.setVolume(0);
   };

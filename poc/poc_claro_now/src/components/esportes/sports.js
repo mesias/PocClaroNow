@@ -5,6 +5,9 @@ import "./sports.css";
 
 const Modalidades = () => {
   const [arr, setArr] = useState([...NameModalities]);
+  const [tableOne, setTableOne] = useState(arr.slice(0,5));
+
+  console.log(tableOne)
 
   return (
     <>
@@ -17,7 +20,8 @@ const Modalidades = () => {
           </thead>
 
           <tbody>
-            {arr.map((e, i) => (
+            {tableOne.map((e, i) => (
+              // console.log(e)
               <tr key={i}>
                 <td className="row">
                   <img src={e.img} className="img" />
@@ -25,8 +29,12 @@ const Modalidades = () => {
                 <td>{e.modalidade}</td>
               </tr>
             ))}
+
+
           </tbody>
         </Table>
+
+        {/* {arr.slice(0,5)} */}
       </section>
     </>
   );

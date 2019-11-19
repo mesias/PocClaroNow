@@ -1,53 +1,58 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import './navBar.css'
-import claroNow from '../../images/claroNow.png'
-
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import "./navBar.css";
+import claroNow from "../../images/claroNow.png";
+import logNetClaro from "../../images/logoNetClaro.png";
+import logoOlimpiadas from '../../images/logoOlimpiadas.png'
 
 const NavBarHome = () => {
-
   const renderTooltip = props => (
-    <div {...props} className='tooltip'>
+    <div {...props} className="tooltip">
       Em Construção
     </div>
   );
 
-  return(
-  <section className="container-nav">
-        <Navbar className="nav-bar">
-          <h1 className="box-a">
-            <img src={claroNow} className='logo-claro' />
-          </h1>
-          <section className='saudacao'>
-            <p className='saud-paragrafo'>Olá Marcelo! Seja bem vindo ao Now Olimpíadas!</p>
+  return (
+    <section className="container-nav">
+      <Navbar className="nav-bar">
+        <section className='logo-back'>
+        <i className="material-icons icon-left">keyboard_arrow_left</i>
+        </section>
 
-          </section>
-          <section className="container-logo">            
-            <OverlayTrigger
-              placement="right-start"
-              delay={{ show: 250, hide: 400 }}
-              overlay={renderTooltip}
-            >
-              <button className='logo-perfil'>
-                <i className="fas fa-user-alt"></i>
-              </button>
-            </OverlayTrigger>
+        <h1 className="saudacao">
+          <img src={claroNow} className="logo-claro logoClaroNow" />
+          <img src={logNetClaro} className="logo-claro" />
+          <img src={logoOlimpiadas}  className=' logo-claro logoOlimpiadas'/>
+        </h1>
+        <section className="container-logo">
+          <OverlayTrigger
+            placement="right-start"
+            delay={{ show: 250, hide: 400 }}
+            overlay={renderTooltip}
+          >
+            <a className="logo-perfil">MEDALHAS</a>
+          </OverlayTrigger>
 
-            <OverlayTrigger
-              placement="left-start"
-              delay={{ show: 250, hide: 400 }}
-              overlay={renderTooltip}
-            >
-              <button className='logout'>
-                <i className="fas fa-sign-out-alt"></i>
-              </button>
-            </OverlayTrigger>
-          </section>
-        </Navbar>
-      </section>
-      
-      )
-}
+          <OverlayTrigger
+            placement="left-start"
+            delay={{ show: 250, hide: 400 }}
+            overlay={renderTooltip}
+          >
+            <a className="logout">MODADLIDADES</a>
+          </OverlayTrigger>
+
+          <OverlayTrigger
+            placement="left-start"
+            delay={{ show: 250, hide: 400 }}
+            overlay={renderTooltip}
+          >
+              <i class="fas fa-search"></i>
+          </OverlayTrigger>
+        </section>
+      </Navbar>
+    </section>
+  );
+};
 
 export default NavBarHome;

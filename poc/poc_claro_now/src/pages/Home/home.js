@@ -14,7 +14,7 @@ const Home = () => {
       <section className="container-nav">
         <NavBarHome></NavBarHome>
       </section>
-      <section>
+      {/* <section>
         <section className="sectionCarrossel">         
           <Menu></Menu>
         </section>
@@ -23,8 +23,8 @@ const Home = () => {
         <MedalsChart />
       </section>
       <section className='modalities'> 
-        {/* <Modalidades></Modalidades>             */}
-      </section>
+        <Modalidades></Modalidades>            
+      </section> */}
     </main>
   );
 };
