@@ -15,7 +15,7 @@ const Menu = () => {
       controls: 0,
       rel: 0,
       fs: 0,
-      autoplay: 1,
+      autoplay: 0,
       modestbranding: 1
     }
     
