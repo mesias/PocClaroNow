@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./navVideo.css";
 import imagemap from '../../consts/imagemap'
 
-const NavBarHome = () => {
-  const [menu_open, setMenuOpen] = useState(false);
+const NavBarHome = (props) => {
+  const [menu_open, setMenuOpen] = [props.open, props.setOpen]
 
   return (
     <section className="container-nav">
@@ -21,7 +21,7 @@ const NavBarHome = () => {
           <span onClick={()=>setMenuOpen(!menu_open)}>
             <img src={imagemap.playerMosaico} className="logo-mosaic" />
             <a className="no-ar">NO AR</a>
-            <img src={menu_open ? imagemap.playerDown : imagemap.playerUp} className="logo-arrow" />
+            <img src={menu_open ? imagemap.playerUp : imagemap.playerDown} className="logo-arrow" />
           </span>
         </section>
       </nav>

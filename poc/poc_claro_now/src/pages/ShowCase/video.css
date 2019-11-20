@@ -6,6 +6,10 @@
     overflow-x: hidden;
     scrollbar-color: black;
 }
+.holder-side {
+    display: flex;
+    flex-wrap: wrap;
+}
 .frame{
     width: 100%;
     height:100%;
