@@ -14,24 +14,24 @@ const NavBarHomeMain = ({to}) => {
   );
 
   return (
-    <section className="container-nav">
-      <nav className="navBar">
-        <section className='logo-back'>
-        <Link className="material-icons icon-left" to={to}>keyboard_arrow_left</Link>
+    <section className="container-nav-dif">
+      <nav className="navBar-dif">
+        <section className='logo-back-dif'>
+        <Link className="material-icons icon-left-dif" to={to}>keyboard_arrow_left</Link>
         </section>
 
-        <h1 className="saudacao">
-          <img src={claroNow} className="logo-claro logoClaroNow" />
-          <img src={logNetClaro} className="logo-claro" />
-          <img src={logoOlimpiadas}  className=' logo-claro logoOlimpiadas'/>
+        <h1 className="saudacao-dif">
+          <img src={claroNow} className="logo-claro logoClaroNow-dif" />
+          <img src={logNetClaro} className="logo-claro-dif" />
+          <img src={logoOlimpiadas}  className=' logo-claro logoOlimpiadas-dif'/>
         </h1>
-        <section className="container-logo">
+        <section className="container-logo-dif">
           <OverlayTrigger
             placement="right-start"
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip}
           >
-            <a className="logo-perfil">MEDALHAS</a>
+            <a className="logo-perfil-dif">MEDALHAS</a>
           </OverlayTrigger>
 
           <OverlayTrigger
@@ -39,7 +39,7 @@ const NavBarHomeMain = ({to}) => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip}
           >
-            <a className="logout">MODALIDADES</a>
+            <a className="logout-dif">MODALIDADES</a>
           </OverlayTrigger>
 
           <OverlayTrigger
