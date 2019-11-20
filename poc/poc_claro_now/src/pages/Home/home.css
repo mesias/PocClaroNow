@@ -116,6 +116,11 @@
   background-size: 8rem ;
 }
 
+.buttonTroca:hover {
+  background: url(../../assets/img/Brasil.png) no-repeat;
+  background-size: 8rem ;
+}
+
 .btnContMod{
   width: 82rem;
   display: grid;

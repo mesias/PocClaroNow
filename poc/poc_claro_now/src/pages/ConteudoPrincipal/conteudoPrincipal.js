@@ -10,14 +10,13 @@ import JgBasqFour from "../../assets/img/modalidade-destaque-4.png";
 import JgBasqFive from "../../assets/img/modalidade-destaque-5.png";
 
 const ConteudoPrincipal = () => {
-
  
   return (
     <main className='mainCp'>
       <NavBarCP></NavBarCP>
       <section>
         <section className="container-banner-cp">
-          <Link to='/home'>
+          <Link to='/destaque-main'>
           <img src={BannerCP} className="BCPImg"></img>
           </Link>          
         </section>
