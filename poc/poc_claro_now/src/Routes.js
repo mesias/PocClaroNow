@@ -1,7 +1,8 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Switch, Route, /* Redirect */} from 'react-router-dom';
-import YouTube from './consts/youtube'
-import HomeDestaque from './pages/HomeDestaque/homeDestaque';
+import Modalidade from './pages/Modalidade/modalidade';
+import Medalhas from './pages/Medalhas/medalhas';
+import ConteudoPrincipal from './pages/ConteudoPrincipal/conteudoPrincipal';
 
 const Home = lazy(() => import('./pages/Home/home'));
 const VideoShowCase = lazy(() => import('./pages/videoshowcase'));
@@ -12,8 +13,10 @@ const Routes = () =>(
   <BrowserRouter>
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/home-destaque' component={HomeDestaque} />
+        <Route exact path='/' component={ConteudoPrincipal} />
+        <Route exact path='/home' component={Home} />
+        <Route exact path='/modalidades' component={Modalidade} />
+        <Route exact path='/medalhas' component={Medalhas} />
         <Route exact path='/video' component={VideoShowCase} />
         <Route exact path='/aovivo' component={FixedShowCase} />
         {/* <Route exact path='/Register' component={Register}></Route> */}

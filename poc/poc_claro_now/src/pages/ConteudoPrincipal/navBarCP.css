@@ -1,4 +1,4 @@
-.container-nav{
+.container-nav-cp{
   display: grid; 
   background:  #000000; 
   color: #FBF5E7;
@@ -7,16 +7,16 @@
 
 }
 
-.navBar{
+.navBar-cp{
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 10% 50% 40%;
+  grid-template-columns: 30% 65% 5%;
   height: 5vw;
   grid-template-rows: 0.5vw 3.5vw 1vw;
 }
 
-.logo-back{
+.logo-back-cp{
   grid-row-start: 2; 
   display: grid;
   grid-template-columns: 20% 50% 30%;
@@ -39,20 +39,20 @@
   padding: 15px;
 }
 
-.saudacao{
-  grid-column-start: 2;
+.saudacao-cp{
+  grid-column-start: 1;
   /* grid-row-start: 2; */
   text-align: end; 
   align-items: center;
   /* margin-top: 10px;  */
 }
 
-.saud-paragrafo{
+.saud-paragrafo-cp{
   color: #FBF5E7;
   
 }
 
-.container-logo{
+.container-logo-cp{
   display: grid;
   grid-column-start: 3;
   grid-row-start: 2;

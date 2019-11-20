@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import Navbar from "react-bootstrap/Navbar";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import "./navBar.css";
+import "./navBarCP.css";
 import claroNow from "../../images/claroNow.png";
 import logNetClaro from "../../images/logoNetClaro.png";
 import logoOlimpiadas from '../../images/logoOlimpiadas.png'
 
-const NavBarHome = ({to}) => {
+const NavBarCP = ({to}) => {
   const renderTooltip = props => (
     <div {...props} className="tooltip">
       Em Construção
@@ -15,34 +15,14 @@ const NavBarHome = ({to}) => {
   );
 
   return (
-    <section className="container-nav">
-      <nav className="navBar">
-        <section className='logo-back'>
-        <Link className="material-icons icon-left" to={to}>keyboard_arrow_left</Link>
-        </section>
-
-        <h1 className="saudacao">
+    <section className="container-nav-cp">
+      <nav className="navBar-cp">
+        <h1 className="saudacao-cp">
           <img src={claroNow} className="logo-claro logoClaroNow" />
           <img src={logNetClaro} className="logo-claro" />
           <img src={logoOlimpiadas}  className=' logo-claro logoOlimpiadas'/>
         </h1>
-        <section className="container-logo">
-          <OverlayTrigger
-            placement="right-start"
-            delay={{ show: 250, hide: 400 }}
-            overlay={renderTooltip}
-          >
-            <a className="logo-perfil">MEDALHAS</a>
-          </OverlayTrigger>
-
-          <OverlayTrigger
-            placement="left-start"
-            delay={{ show: 250, hide: 400 }}
-            overlay={renderTooltip}
-          >
-            <a className="logout">MODALIDADES</a>
-          </OverlayTrigger>
-
+        <section className="container-logo-cp">
           <OverlayTrigger
             placement="left-start"
             delay={{ show: 250, hide: 400 }}
@@ -56,4 +36,4 @@ const NavBarHome = ({to}) => {
   );
 };
 
-export default NavBarHome;
+export default NavBarCP;
