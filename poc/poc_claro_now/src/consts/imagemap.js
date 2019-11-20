@@ -9,7 +9,7 @@ const imagemap = {
     playerDown: require('../assets/img/player-expande.png'),
     playerAdd1: require('../assets/img/player-adicionar-1.png'),
     playerAdd2: require('../assets/img/player-adicionar-2.png'),
-    playerRem1: require('../assets/img/player-remover-1.png'),
+    // playerRem1: require('../assets/img/player-remover-1.png'),
 }
 
 export default imagemap;

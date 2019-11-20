@@ -1,7 +1,7 @@
 .container-body{
   background: #1B1B1B;
   width: 100%;
-  height: 100rem;  
+  /* height: 100rem;   */
 }
 .container-banner-dt{
   background: #1B1B1B ;
@@ -14,11 +14,6 @@
 .container-title{
   height: 3vw;
 }
-
-/* .banner-destaque{
-  width: 100%;
-  height: 100%;
-} */
 
 
 @font-face {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import YouTube from 'react-youtube';
 import tube from '../../consts/youtube'
 import NavBar from '../../components/NavVideo';
-import SideMenu from '../../components/SideMenu';
+// import SideMenu from '../../components/SideMenu';
 import "./video.css";
 
 const VideoShowCase = (props) => {
@@ -147,7 +147,7 @@ const VideoShowCase = (props) => {
         </section>
       }
       <section>
-        <SideMenu open={open} screens={screens} onImgClick={onImgClick} ></SideMenu>
+        {/* <SideMenu open={open} screens={screens} onImgClick={onImgClick} ></SideMenu> */}
       </section>
     </main>
   )
