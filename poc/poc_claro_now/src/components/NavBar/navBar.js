@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import Navbar from "react-bootstrap/Navbar";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import "./navBar.css";
 import claroNow from "../../images/claroNow.png";
 import logNetClaro from "../../images/logoNetClaro.png";
 import logoOlimpiadas from '../../images/logoOlimpiadas.png'
 
-const NavBarHome = ({to}) => {
+const NavBarHomeMain = ({to}) => {
   const renderTooltip = props => (
     <div {...props} className="tooltip">
       Em Construção
@@ -56,4 +55,4 @@ const NavBarHome = ({to}) => {
   );
 };
 
-export default NavBarHome;
+export default NavBarHomeMain;

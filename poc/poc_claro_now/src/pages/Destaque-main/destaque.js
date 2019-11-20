@@ -1,7 +1,7 @@
 import React from "react";
 import "./destaque.css";
 import { Link } from "react-router-dom";
-import NavBarHome from "../../components/NavBar/navBar";
+import NavBarHomeMain from "../../components/NavBar/navBar";
 import destaqueAV from "../../assets/img/Imagem-destaque-main-lp.png";
 import TelaDestaque from "../../assets/img/home-medalhas-vivo-1.png";
 import TlDestTwo from "../../assets/img/home-medalhas-vivo-2.png";
@@ -10,7 +10,7 @@ import TlDestThree from "../../assets/img/home-medalhas-vivo-3.png";
 const DestaqueMain = () => {
   return (
     <main className="container-body">
-      <NavBarHome to="/home"></NavBarHome>
+      <NavBarHomeMain to="/home"></NavBarHomeMain>
       <section>
         <section className="container-banner-dt">
           <section className="destaque-container">

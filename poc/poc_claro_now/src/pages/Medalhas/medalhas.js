@@ -1,20 +1,17 @@
 import React, { useState } from "react";
-import NavBarHome from "../../components/NavBar/navBar";
 import './medalhas.css';
 import VoleiImg from "../../assets/img/medalhas-main.png";
-import ModNowOne from "../../assets/img/modalidade-agora-1.png";
-import ModNowTwo from "../../assets/img/modalidade-agora-2.png";
-import ModNow from "../../assets/img/modalidade-agora-3.png";
 import JgBasqOne from '../../assets/img/modalidade-destaque-1.png'
 import JgBasqTwo from '../../assets/img/modalidade-destaque-2.png'
 import JgBasqThree from '../../assets/img/modalidade-destaque-3.png'
 import JgBasqFour from '../../assets/img/modalidade-destaque-4.png'
 import JgBasqFive from '../../assets/img/modalidade-destaque-5.png'
+import NavBarHomeMain from "../../components/NavBar/navBar";
 
 const Medalhas = () => {
   return (
     <section className="container-medalhas">
-      <NavBarHome to='/home'></NavBarHome>
+      <NavBarHomeMain to='/home'></NavBarHomeMain>
       <section className="container-banner-md">
         <img src={VoleiImg} className="voleiImg"></img>
       </section>
