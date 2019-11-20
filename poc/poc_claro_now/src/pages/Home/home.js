@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <main className="container-main">
       <section className="container-nav">
-        <NavBarHome></NavBarHome>
+        <NavBarHome to='/'></NavBarHome>
       </section>
       <section className="sectionCarrossel">
         <section className="contTitle">

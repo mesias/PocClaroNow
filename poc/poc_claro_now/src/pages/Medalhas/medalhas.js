@@ -14,7 +14,7 @@ import JgBasqFive from '../../assets/img/modalidade-destaque-5.png'
 const Medalhas = () => {
   return (
     <section className="container-medalhas">
-      <NavBarHome to='/'></NavBarHome>
+      <NavBarHome to='/home'></NavBarHome>
       <section className="container-banner-md">
         <img src={VoleiImg} className="voleiImg"></img>
       </section>

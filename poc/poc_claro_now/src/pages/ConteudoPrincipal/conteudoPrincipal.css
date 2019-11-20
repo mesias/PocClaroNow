@@ -1,0 +1,31 @@
+.mainCp{
+  background: #1B1B1B;
+  width: 100vw;
+}
+.container-banner-cp{
+  width: 100vw;
+  height: 27vw;
+  color: aliceblue;
+  background: #1B1B1B;
+
+}
+
+.BCPImg{
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: FuturaStd;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../assets/Fontes/FuturaStd-CondensedBold.otf);
+}
+
+.destaquesSemana{
+  background: #1B1B1B;
+  width: 100%;
+  color: antiquewhite;
+  margin-left: 3rem;
+  grid-template-rows: 20rem;
+}
