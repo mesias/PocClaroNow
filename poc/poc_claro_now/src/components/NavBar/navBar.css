@@ -26,6 +26,11 @@
 .icon-left{
   font-size: 30px;
   grid-column-start: 2;
+  color: #FBF5E7;
+}
+.icon-left:hover{
+  color:#FBF5E7;
+  text-decoration: none;
 }
 
 .box-a{

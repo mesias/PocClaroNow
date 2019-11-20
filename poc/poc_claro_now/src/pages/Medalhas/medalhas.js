@@ -11,12 +11,10 @@ import JgBasqThree from '../../assets/img/modalidade-destaque-3.png'
 import JgBasqFour from '../../assets/img/modalidade-destaque-4.png'
 import JgBasqFive from '../../assets/img/modalidade-destaque-5.png'
 
-
-
 const Medalhas = () => {
   return (
     <section className="container-medalhas">
-      <NavBarHome></NavBarHome>
+      <NavBarHome to='/'></NavBarHome>
       <section className="container-banner-md">
         <img src={VoleiImg} className="voleiImg"></img>
       </section>

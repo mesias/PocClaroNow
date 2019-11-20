@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import Navbar from "react-bootstrap/Navbar";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import "./navBar.css";
@@ -6,7 +7,7 @@ import claroNow from "../../images/claroNow.png";
 import logNetClaro from "../../images/logoNetClaro.png";
 import logoOlimpiadas from '../../images/logoOlimpiadas.png'
 
-const NavBarHome = () => {
+const NavBarHome = ({to}) => {
   const renderTooltip = props => (
     <div {...props} className="tooltip">
       Em Construção
@@ -17,7 +18,7 @@ const NavBarHome = () => {
     <section className="container-nav">
       <nav className="navBar">
         <section className='logo-back'>
-        <i className="material-icons icon-left">keyboard_arrow_left</i>
+        <Link className="material-icons icon-left" to={to}>keyboard_arrow_left</Link>
         </section>
 
         <h1 className="saudacao">

@@ -16,7 +16,7 @@ import JgBasqFive from '../../assets/img/modalidade-destaque-5.png'
 const Modalidade = () => {
   return (
     <section className="container-hd">
-      <NavBarHome></NavBarHome>
+      <NavBarHome to='/'></NavBarHome>
       <section className="container-banner">
         <img src={BasqueteImg} className="basqueteImg"></img>
       </section>

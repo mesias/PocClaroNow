@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import { Link } from 'react-router-dom';
 import NavBarHome from "../../components/NavBar/navBar";
 import Menu from "../../components/CardCarousel/CardCarousel";
 import MedalsChart from "../../components/MedalsChart";
@@ -54,7 +55,8 @@ const Home = () => {
           </font>
         </h5>
         <section className="btnContainer">
-          <button className="buttonTroca"></button>
+          <Link  className="buttonTroca" to='/medalhas'>
+          </Link>
           <button className="buttonHome">
             <img src={MedalhaUsa} className="imgbtn"></img>
           </button>
@@ -83,9 +85,9 @@ const Home = () => {
             </font>
           </h5>
           <section className="btnContMod">
-            <button className="buttonModalidades">
+            <Link className="buttonModalidades" to='/modalidades'>
               <img src={BasqueteM} className="imgbtnMod"></img>
-            </button>
+            </Link>
             <button className="buttonModalidades">
               <img src={BoxeM} className="imgbtnMod"></img>
             </button>
