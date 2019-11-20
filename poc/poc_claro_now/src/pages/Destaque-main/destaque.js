@@ -1,5 +1,6 @@
 import React from "react";
 import "./destaque.css";
+import { Link } from "react-router-dom";
 import NavBarHome from "../../components/NavBar/navBar";
 import destaqueAV from "../../assets/img/Imagem-destaque-main-lp.png";
 import TelaDestaque from "../../assets/img/home-medalhas-vivo-1.png";
@@ -13,6 +14,7 @@ const DestaqueMain = () => {
       <section>
         <section className="container-banner-dt">
           <section className="destaque-container">
+
             <section className="container-title">
               <h5 className="titleDest-main">
                 <font size="4" face="FturaStd ">
@@ -20,10 +22,11 @@ const DestaqueMain = () => {
                 </font>
               </h5>
             </section>
+
             <section className="sectionAoVivoDest">
-              <button className="btnAoVivo">
+              <Link className="btnAoVivo" to="/aovivo">
                 <img src={TelaDestaque} className="imgbtnVivo"></img>
-              </button>
+              </Link>
               <button className="btnAoVivo">
                 <img src={TlDestTwo} className="imgbtnVivo"></img>
               </button>

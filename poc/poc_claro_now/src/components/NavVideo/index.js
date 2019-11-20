@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navVideo.css";
-import imagemap from '../../consts/imagemap'
+import imagemap from '../../consts/imagemap';
+import { Link } from "react-router-dom";
 
 const NavBarHome = (props) => {
   const [menu_open, setMenuOpen] = [props.open, props.setOpen]
@@ -9,7 +10,7 @@ const NavBarHome = (props) => {
     <section className="container-nav">
       <nav className="navBar">
         <section className='logo-back'>
-          <i className="material-icons icon-left">keyboard_arrow_left</i>
+          <Link className="material-icons icon-left" to="/home">keyboard_arrow_left</Link>
         </section>
         <h1 className="saudacao">
           <img src={imagemap.espnLogo} className="logo-claro logoEspn" />

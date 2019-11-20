@@ -37,9 +37,9 @@ const Home = () => {
           </h5>
         </section>
         <section className="sectionAoVivo">
-          <button className="btnAoVivo">
+          <Link className="btnAoVivo" to="/aovivo">
             <img src={TelaDestaque} className="imgbtnVivo"></img>
-          </button>
+          </Link>
           <button className="btnAoVivo">
             <img src={TlDestTwo} className="imgbtnVivo"></img>
           </button>
