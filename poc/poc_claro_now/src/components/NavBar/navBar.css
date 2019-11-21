@@ -1,4 +1,4 @@
-.container-nav{
+.container-nav-dif{
   display: grid; 
   background:  #000000; 
   color: #FBF5E7;
@@ -7,7 +7,7 @@
 
 }
 
-.navBar{
+.navBar-dif{
   margin: 0;
   padding: 0;
   display: grid;
@@ -16,30 +16,30 @@
   grid-template-rows: 0.5vw 3.5vw 1vw;
 }
 
-.logo-back{
+.logo-back-dif{
   grid-row-start: 2; 
   display: grid;
   grid-template-columns: 20% 50% 30%;
   align-items: center   
 }
 
-.icon-left{
+.icon-left-dif{
   font-size: 30px;
   grid-column-start: 2;
   color: #FBF5E7;
 }
-.icon-left:hover{
+.icon-left-dif:hover{
   color:#FBF5E7;
   text-decoration: none;
 }
 
-.box-a{
+/* .box-a{
   grid-row-start: 2;  
   align-self: center;
   padding: 15px;
-}
+} */
 
-.saudacao{
+.saudacao-dif{
   grid-column-start: 2;
   /* grid-row-start: 2; */
   text-align: end; 
@@ -47,12 +47,12 @@
   /* margin-top: 10px;  */
 }
 
-.saud-paragrafo{
+/* .saud-paragrafo{
   color: #FBF5E7;
   
-}
+} */
 
-.container-logo{
+.container-logo-dif{
   display: grid;
   grid-column-start: 3;
   grid-row-start: 2;
@@ -61,7 +61,7 @@
 }
 
 
-.logout{
+.logout-dif{
   justify-self: center;
   color: #FBF5E7;
   background: none;
@@ -69,7 +69,7 @@
   font-size: 15px;
   /* align-self: start */
 }
-.logo-perfil{
+.logo-perfil-dif{
   justify-self: end;
   background: none;
   border: none;
@@ -88,14 +88,14 @@
   margin-top: 0;
   /* align-self: start; */
 }
-.logo-claro{
+.logo-claro-dif{
   height: 4vw;
   padding-right: 2vw;
 }
-.logoOlimpiadas{
+.logoOlimpiadas-dif{
   height: 2vw;
 }
-.logoClaroNow{
+.logoClaroNow-dif{
   height: 3vw;
   padding-right: 2vw;
 }

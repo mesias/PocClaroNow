@@ -1,11 +1,6 @@
 import React from "react";
 import "./home.css";
 import { Link } from 'react-router-dom';
-import NavBarHome from "../../components/NavBar/navBar";
-import Menu from "../../components/CardCarousel/CardCarousel";
-import MedalsChart from "../../components/MedalsChart";
-import Modalidades from "../../components/esportes/sports";
-import MedalhaBrasil from "../../assets/img/transparentBrasil.png";
 import MedalhaUsa from "../../assets/img/home-medalha-eua.png";
 import MedalhaJp from "../../assets/img/home-medalha-japao.png";
 import MedalhaRs from "../../assets/img/home-medalha-russia.png";
@@ -20,13 +15,14 @@ import VoleibalM from "../../assets/img/home-modalidade-volei.png";
 import TelaDestaque from "../../assets/img/home-medalhas-vivo-1.png";
 import TlDestTwo from "../../assets/img/home-medalhas-vivo-2.png";
 import TlDestThree from "../../assets/img/home-medalhas-vivo-3.png";
+import NavBarHomeMain from "../../components/NavBar/navBar";
 
 const Home = () => { 
 
   return (
     <main className="container-main">
       <section className="container-nav">
-        <NavBarHome to='/'></NavBarHome>
+        <NavBarHomeMain to='/'></NavBarHomeMain>
       </section>
       <section className="sectionCarrossel">
         <section className="contTitle">
@@ -37,9 +33,9 @@ const Home = () => {
           </h5>
         </section>
         <section className="sectionAoVivo">
-          <button className="btnAoVivo">
+          <Link className="btnAoVivo" to="/aovivo">
             <img src={TelaDestaque} className="imgbtnVivo"></img>
-          </button>
+          </Link>
           <button className="btnAoVivo">
             <img src={TlDestTwo} className="imgbtnVivo"></img>
           </button>

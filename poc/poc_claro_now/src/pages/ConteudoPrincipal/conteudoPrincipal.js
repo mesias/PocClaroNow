@@ -23,7 +23,7 @@ const ConteudoPrincipal = () => {
       </section>
       <section>
         <h5 className="titleDest">
-          <font size="4" face="FturaStd ">
+          <font size="4" face="FturaStd " className='font'>
             DESTAQUES DA SEMANA
           </font>
         </h5>
