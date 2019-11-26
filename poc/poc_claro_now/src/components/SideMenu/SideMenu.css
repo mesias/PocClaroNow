@@ -1,22 +1,22 @@
 
-.container {
+.sidenav {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 95%;
     width: 25%;
     text-align: right;
     padding: 2rem;
     position: absolute;
+    margin-right: auto;
+    margin-left: auto;
     bottom: 0;
     right: 0;
     transition: transform 0.3s ease-in-out;
 }
 
 .container-img {
-    display: grid;
     padding-right: 1vh;
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
 .container-img-over {

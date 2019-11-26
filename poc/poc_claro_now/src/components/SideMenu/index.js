@@ -8,7 +8,7 @@ const SideMenu = ({open, screens,onImgClick}) => {
     return (
         <section >
             {open &&
-                <div className="container">
+                <div className="sidenav">
                     <div className={`container-img ${screens > 1 ? 'container-img-over' : ''}`}>
                         {screens > 1 &&
                             <img src={imagemap.playerRem1} onClick={()=> onImgClick(1) }/>
