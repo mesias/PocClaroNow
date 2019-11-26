@@ -1,51 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "77b5ffb72ec5c416d3212e605902cb39",
+    "revision": "15c4176f6953e9758887caa6dbf8907b",
     "url": "/pocclaronow/index.html"
   },
   {
-    "revision": "ec0588f6e0a1eaa4988e",
-    "url": "/pocclaronow/static/css/4.055c01e6.chunk.css"
+    "revision": "710c5ad72df222b9a269",
+    "url": "/pocclaronow/static/css/main.6715807d.chunk.css"
   },
   {
-    "revision": "d16334698b4f5b480e2e",
-    "url": "/pocclaronow/static/css/5.3065732d.chunk.css"
+    "revision": "d87be4a3f177add2f9f7",
+    "url": "/pocclaronow/static/js/2.18a20574.chunk.js"
   },
   {
-    "revision": "8e98d41a6e50203be6ea",
-    "url": "/pocclaronow/static/css/6.86314845.chunk.css"
+    "revision": "710c5ad72df222b9a269",
+    "url": "/pocclaronow/static/js/main.27a7f5b2.chunk.js"
   },
   {
-    "revision": "cf2283369df29cdd7935",
-    "url": "/pocclaronow/static/css/main.fb70abff.chunk.css"
-  },
-  {
-    "revision": "0fb1a0d61c13258b0f53",
-    "url": "/pocclaronow/static/js/0.0a7bcd57.chunk.js"
-  },
-  {
-    "revision": "cd2c49da43c5f46fa145",
-    "url": "/pocclaronow/static/js/3.7bac99a1.chunk.js"
-  },
-  {
-    "revision": "ec0588f6e0a1eaa4988e",
-    "url": "/pocclaronow/static/js/4.e1057f9f.chunk.js"
-  },
-  {
-    "revision": "d16334698b4f5b480e2e",
-    "url": "/pocclaronow/static/js/5.340ae039.chunk.js"
-  },
-  {
-    "revision": "8e98d41a6e50203be6ea",
-    "url": "/pocclaronow/static/js/6.7ab5c6c2.chunk.js"
-  },
-  {
-    "revision": "cf2283369df29cdd7935",
-    "url": "/pocclaronow/static/js/main.2d458fc7.chunk.js"
-  },
-  {
-    "revision": "9bebcf9fa3bf53a65afa",
-    "url": "/pocclaronow/static/js/runtime-main.e61c8afe.js"
+    "revision": "ed7f9c1b0a41138e9128",
+    "url": "/pocclaronow/static/js/runtime-main.5d739ee0.js"
   },
   {
     "revision": "a021a98b27501f698441a4a1a67b379e",

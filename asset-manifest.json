@@ -1,30 +1,16 @@
 {
   "files": {
-    "static/js/0.0a7bcd57.chunk.js": "/pocclaronow/static/js/0.0a7bcd57.chunk.js",
-    "static/js/0.0a7bcd57.chunk.js.map": "/pocclaronow/static/js/0.0a7bcd57.chunk.js.map",
-    "main.css": "/pocclaronow/static/css/main.fb70abff.chunk.css",
-    "main.js": "/pocclaronow/static/js/main.2d458fc7.chunk.js",
-    "main.js.map": "/pocclaronow/static/js/main.2d458fc7.chunk.js.map",
-    "runtime-main.js": "/pocclaronow/static/js/runtime-main.e61c8afe.js",
-    "runtime-main.js.map": "/pocclaronow/static/js/runtime-main.e61c8afe.js.map",
-    "static/js/3.7bac99a1.chunk.js": "/pocclaronow/static/js/3.7bac99a1.chunk.js",
-    "static/js/3.7bac99a1.chunk.js.map": "/pocclaronow/static/js/3.7bac99a1.chunk.js.map",
-    "static/css/4.055c01e6.chunk.css": "/pocclaronow/static/css/4.055c01e6.chunk.css",
-    "static/js/4.e1057f9f.chunk.js": "/pocclaronow/static/js/4.e1057f9f.chunk.js",
-    "static/js/4.e1057f9f.chunk.js.map": "/pocclaronow/static/js/4.e1057f9f.chunk.js.map",
-    "static/css/5.3065732d.chunk.css": "/pocclaronow/static/css/5.3065732d.chunk.css",
-    "static/js/5.340ae039.chunk.js": "/pocclaronow/static/js/5.340ae039.chunk.js",
-    "static/js/5.340ae039.chunk.js.map": "/pocclaronow/static/js/5.340ae039.chunk.js.map",
-    "static/css/6.86314845.chunk.css": "/pocclaronow/static/css/6.86314845.chunk.css",
-    "static/js/6.7ab5c6c2.chunk.js": "/pocclaronow/static/js/6.7ab5c6c2.chunk.js",
-    "static/js/6.7ab5c6c2.chunk.js.map": "/pocclaronow/static/js/6.7ab5c6c2.chunk.js.map",
+    "main.css": "/pocclaronow/static/css/main.6715807d.chunk.css",
+    "main.js": "/pocclaronow/static/js/main.27a7f5b2.chunk.js",
+    "main.js.map": "/pocclaronow/static/js/main.27a7f5b2.chunk.js.map",
+    "runtime-main.js": "/pocclaronow/static/js/runtime-main.5d739ee0.js",
+    "runtime-main.js.map": "/pocclaronow/static/js/runtime-main.5d739ee0.js.map",
+    "static/js/2.18a20574.chunk.js": "/pocclaronow/static/js/2.18a20574.chunk.js",
+    "static/js/2.18a20574.chunk.js.map": "/pocclaronow/static/js/2.18a20574.chunk.js.map",
     "index.html": "/pocclaronow/index.html",
-    "precache-manifest.045402bea7088e0bd57e66e1e6491ed1.js": "/pocclaronow/precache-manifest.045402bea7088e0bd57e66e1e6491ed1.js",
+    "precache-manifest.51db2bc2ebb18566290d3b34e1ac6037.js": "/pocclaronow/precache-manifest.51db2bc2ebb18566290d3b34e1ac6037.js",
     "service-worker.js": "/pocclaronow/service-worker.js",
-    "static/css/4.055c01e6.chunk.css.map": "/pocclaronow/static/css/4.055c01e6.chunk.css.map",
-    "static/css/5.3065732d.chunk.css.map": "/pocclaronow/static/css/5.3065732d.chunk.css.map",
-    "static/css/6.86314845.chunk.css.map": "/pocclaronow/static/css/6.86314845.chunk.css.map",
-    "static/css/main.fb70abff.chunk.css.map": "/pocclaronow/static/css/main.fb70abff.chunk.css.map",
+    "static/css/main.6715807d.chunk.css.map": "/pocclaronow/static/css/main.6715807d.chunk.css.map",
     "static/media/Banner-tela-principal.png": "/pocclaronow/static/media/Banner-tela-principal.a021a98b.png",
     "static/media/home.css": "/pocclaronow/static/media/home-medalha-brasil.7678c5be.png",
     "static/media/Imagem-destaque-main-lp.png": "/pocclaronow/static/media/Imagem-destaque-main-lp.2355535e.png",
@@ -59,9 +45,9 @@
     "static/media/player-remover-1.png": "/pocclaronow/static/media/player-remover-1.fb357324.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e61c8afe.js",
-    "static/js/3.7bac99a1.chunk.js",
-    "static/css/main.fb70abff.chunk.css",
-    "static/js/main.2d458fc7.chunk.js"
+    "static/js/runtime-main.5d739ee0.js",
+    "static/js/2.18a20574.chunk.js",
+    "static/css/main.6715807d.chunk.css",
+    "static/js/main.27a7f5b2.chunk.js"
   ]
 }
