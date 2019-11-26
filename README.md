@@ -1,2 +1,0 @@
-# PocClaroNow
-Poc Claro Now
