@@ -1,8 +1,8 @@
 {
   "name": "poc_claro_now",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "http://mesias.github.io/PocClaroNow",
+  "private": false,
+  "homepage": "https://mesias.github.io/pocclaronow/",
   "dependencies": {
     "antd": "^3.25.2",
     "bootstrap": "^4.3.1",
