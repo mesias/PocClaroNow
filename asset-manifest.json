@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pocclaronow/static/css/main.6715807d.chunk.css",
-    "main.js": "/pocclaronow/static/js/main.27a7f5b2.chunk.js",
-    "main.js.map": "/pocclaronow/static/js/main.27a7f5b2.chunk.js.map",
+    "main.js": "/pocclaronow/static/js/main.acbce465.chunk.js",
+    "main.js.map": "/pocclaronow/static/js/main.acbce465.chunk.js.map",
     "runtime-main.js": "/pocclaronow/static/js/runtime-main.5d739ee0.js",
     "runtime-main.js.map": "/pocclaronow/static/js/runtime-main.5d739ee0.js.map",
-    "static/js/2.18a20574.chunk.js": "/pocclaronow/static/js/2.18a20574.chunk.js",
-    "static/js/2.18a20574.chunk.js.map": "/pocclaronow/static/js/2.18a20574.chunk.js.map",
+    "static/js/2.4d21e379.chunk.js": "/pocclaronow/static/js/2.4d21e379.chunk.js",
+    "static/js/2.4d21e379.chunk.js.map": "/pocclaronow/static/js/2.4d21e379.chunk.js.map",
     "index.html": "/pocclaronow/index.html",
-    "precache-manifest.51db2bc2ebb18566290d3b34e1ac6037.js": "/pocclaronow/precache-manifest.51db2bc2ebb18566290d3b34e1ac6037.js",
+    "precache-manifest.77475b8a13028ec65f673d759fef3ce9.js": "/pocclaronow/precache-manifest.77475b8a13028ec65f673d759fef3ce9.js",
     "service-worker.js": "/pocclaronow/service-worker.js",
     "static/css/main.6715807d.chunk.css.map": "/pocclaronow/static/css/main.6715807d.chunk.css.map",
     "static/media/Banner-tela-principal.png": "/pocclaronow/static/media/Banner-tela-principal.a021a98b.png",
@@ -46,8 +46,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5d739ee0.js",
-    "static/js/2.18a20574.chunk.js",
+    "static/js/2.4d21e379.chunk.js",
     "static/css/main.6715807d.chunk.css",
-    "static/js/main.27a7f5b2.chunk.js"
+    "static/js/main.acbce465.chunk.js"
   ]
 }
