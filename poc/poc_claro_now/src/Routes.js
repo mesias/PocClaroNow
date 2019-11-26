@@ -10,7 +10,6 @@ const VideoShowCase = lazy(() => import('./pages/videoshowcase'));
 const FixedShowCase = lazy(() => import('./pages/ShowCase'));
 
 const Routes = () =>(
-  <>
   <BrowserRouter>
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
@@ -21,13 +20,9 @@ const Routes = () =>(
         <Route exact path='/medalhas' component={Medalhas} />
         <Route exact path='/video' component={VideoShowCase} />
         <Route exact path='/aovivo' component={FixedShowCase} />
-        {/* <Route exact path='/Register' component={Register}></Route> */}
-        {/* <Route exact path='/Salao' component={Salao}></Route>  */}
-        {/* <Route exact path='/Cozinha' component={Cozinha}></Route>        */}
       </Switch>
     </Suspense>
   </BrowserRouter> 
-  </> 
 )
 
 export default Routes;
